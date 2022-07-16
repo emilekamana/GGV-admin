@@ -9,6 +9,7 @@ import {
 	faSignOutAlt,
 	faTachometerAlt,
 } from "@fortawesome/free-solid-svg-icons";
+import Link from "next/link";
 
 function LeftNavbar() {
 	return (
@@ -23,43 +24,33 @@ function LeftNavbar() {
 							icon={faTachometerAlt}
 							style={{ width: "18px", cursor: "pointer" }}
 						/>{" "}
-						<a href="#">Dashboard</a>
+						<Link href="/Users">user</Link>
 					</li>
 					<li>
 						<FontAwesomeIcon
-							icon={faRocket}
+							icon={faTachometerAlt}
 							style={{ width: "18px", cursor: "pointer" }}
 						/>{" "}
-						<a href="#">Explore</a>
+						<Link href="/countries">Countries</Link>
 					</li>
 					<li>
 						<FontAwesomeIcon
-							icon={faBookOpen}
+							icon={faTachometerAlt}
 							style={{ width: "18px", cursor: "pointer" }}
 						/>{" "}
-						<a href="#">Library</a>
+						<Link href="/">Dashboard</Link>
 					</li>
 					<li>
 						<FontAwesomeIcon
-							icon={faHeart}
+							icon={faTachometerAlt}
 							style={{ width: "18px", cursor: "pointer" }}
 						/>{" "}
-						<a href="#">Favourite</a>
+						<Link href="/">Dashboard</Link>
 					</li>
-					<li>
-						<FontAwesomeIcon
-							icon={faCog}
-							style={{ width: "18px", cursor: "pointer" }}
-						/>{" "}
-						<a href="#"> Settings</a>
-					</li>
-					<li>
-						<FontAwesomeIcon
-							icon={faSignOutAlt}
-							style={{ width: "18px", cursor: "pointer" }}
-						/>{" "}
-						<a href="#">Logout</a>
-					</li>
+					
+					
+					
+					
 				</ul>
 			</div>
 		</div>
